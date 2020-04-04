@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+    <div class="card border-primary mb-3 float-lg-left" style="width: 60rem;">
+        <h1 class = "card text-white bg-info mb-3">New York Times Search</h1>
+        <div class="card-body">
+            <h5 class="card-title">Search Parameters</h5>
+            <form id="the-form" action="form-group float-lg-left">
+                <div class="form-inline">
+                    <label for="article-name">Search Term:</label>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" id="search-term" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <div class="form-div">
+                    <label for="numberRecords">Number of Records to retreive:</label>
+                    <select id="dropdown" class="form-control" id="numberRecords">
+                        <option id="1">1</option>
+                        <option id="5">5</option>
+                        <option id="10">10</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="articleStartYear">Start Year (Optional):</label>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" id="start-year" type="search" placeholder="Start Year" aria-label="Search">
+                </form>
+                </div>
+                <div>
+                    <label for="articleEndYear">End Year (Optional):</label>
+                <form id="end-form" class="form-inline">
+                    <input class="form-control mr-sm-2" id="end-year" type="search" placeholder="End Year" aria-label="Search">
+                </form>
+                </div>
+                <br>
+                <button type="submit" id="searchBtn" class="btn btn-primary">Submit</button>
+                <button type="clear" id="clearBtn" class="btn btn-primary">Clear</button>
+            </form>
+            <br><br>
+            <div id="top-articles">
+                <h5 class="search-results">Top Articles</h5>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
